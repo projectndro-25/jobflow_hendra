@@ -1,0 +1,17 @@
+/* Tailwind-lite (opsional, non-build) — util ringan */
+:root{
+  --bg:#0f172a; --card:#ffffff; --muted:#6b7280; --ring:#6366f1; --accent:#7c3aed;
+}
+.container{max-width:1200px;margin:0 auto;padding:1rem}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:.75rem;background:var(--ring);color:#fff;text-decoration:none;font-weight:600}
+.btn.secondary{background:#111827}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:.5rem;background:#eef2ff;color:#4338ca;font-weight:600;font-size:.85rem}
+.input,select,textarea{border:1px solid #e5e7eb;border-radius:.75rem;padding:.6rem .8rem;width:100%}
+.table{width:100%;border-collapse:separate;border-spacing:0 10px}
+.table th{font-weight:600;text-align:left;color:#6b7280;padding:.6rem}
+.table td{background:#fff;padding:.7rem;border-top:1px solid #f3f4f6;border-bottom:1px solid #f3f4f6}
+.card{background:#fff;border-radius:1rem;padding:1rem;box-shadow:0 10px 25px rgba(0,0,0,.05)}
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.text-muted{color:var(--muted)}

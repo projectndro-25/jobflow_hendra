@@ -1,0 +1,16 @@
+# Nyalakan modul rewrite
+RewriteEngine On
+
+# Base sesuai folder kamu di htdocs (dari screenshot: /jobflow/public/)
+RewriteBase /jobflow/public/
+
+# Jika yang diminta adalah file/folder yang memang ada, layani langsung
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Selain itu, lempar ke front controller
+RewriteRule ^ index.php [L]
+
+# Nonaktifkan directory listing (opsional, sama seperti sebelumnya)
+Options -Indexes
