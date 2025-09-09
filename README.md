@@ -7,3 +7,4 @@
 - Salin `.env.example` -> `.env` dan sesuaikan kredensial.
 - Akses: `http://localhost/jobflow` (publik), `http://localhost/jobflow/login` (dashboard).
 - Login pakai user yang ada di tabel `users`. Jika `password_hash` kosong untuk admin/hr, login tetap diizinkan (mode awal).
+# jobflow_hendra
